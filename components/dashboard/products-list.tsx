@@ -1,8 +1,7 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-import { createClient } from '@/lib/supabase/client'
-import ProductCard from './product-card'
+'use client';
+import { useEffect, useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import ProductCard from './product-card';
 
 interface Product {
   id: string

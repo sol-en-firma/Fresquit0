@@ -1,7 +1,6 @@
-'use server'
-
-import { createClient } from '@/lib/supabase/server'
-import { DEMO_USER_ID } from '@/lib/demo'
+'use server';
+import { createClient } from '@/lib/supabase/server';
+import { DEMO_USER_ID } from '@/lib/demo';
 
 export async function markNotificationAsRead(notificationId: string) {
   try {

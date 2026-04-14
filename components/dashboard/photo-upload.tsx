@@ -1,7 +1,6 @@
-'use client'
-
-import { useState, useRef } from 'react'
-import { uploadImageToBlob, saveProducts } from '@/app/actions/upload'
+'use client';
+import { useState, useRef } from 'react';
+import { uploadImageToBlob, saveProducts } from '@/app/actions/upload';
 
 interface DetectedProduct {
   name: string

@@ -1,13 +1,15 @@
-import { signUp } from '@/app/actions/auth'
-import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
-import Link from 'next/link'
+import { signUp } from '@/app/actions/auth';
+import { redirect } from 'next/navigation';
+import { createClient } from '@/lib/supabase/server';
+import Link from 'next/link';
+
+export const dynamic = 'force-dynamic';
 
 export default async function SignUpPage() {
   const supabase = await createClient()
   const {
     data: { user },
-  } = await supabase.auth.getUser()
+  } = await supabase?.auth?.getUser()
 
   if (user) {
     redirect('/dashboard')

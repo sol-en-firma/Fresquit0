@@ -1,7 +1,6 @@
-'use client'
-
-import { useState } from 'react'
-import { markNotificationAsRead, deleteNotification } from '@/app/actions/notifications'
+'use client';
+import { useState } from 'react';
+import { markNotificationAsRead, deleteNotification } from '@/app/actions/notifications';
 
 interface Notification {
   id: string
@@ -42,11 +41,8 @@ export default function NotificationItem({ notification }: NotificationItemProps
       className={`p-4 rounded-xl border-l-4 transition-all ${
         isRead
           ? 'bg-gray-50 border-l-gray-300'
-          : notification.type === 'expiration_warning'
-            ? 'bg-red-50 border-l-red-500'
-            : notification.type === 'recipe_suggestion'
-              ? 'bg-green-50 border-l-green-500'
-              : 'bg-blue-50 border-l-blue-500'
+          : notification.type === 'expiration_warning' ?'bg-red-50 border-l-red-500'
+            : notification.type === 'recipe_suggestion' ?'bg-green-50 border-l-green-500' :'bg-blue-50 border-l-blue-500'
       }`}
     >
       <div className="flex items-start gap-3">
