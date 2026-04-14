@@ -3,6 +3,8 @@ import Link from 'next/link';
 import NotificationItem from '@/components/notifications/notification-item';
 import { DEMO_USER_ID } from '@/lib/demo';
 
+export const dynamic = 'force-dynamic';
+
 export default async function NotificationsPage() {
   const supabase = await createClient()
 

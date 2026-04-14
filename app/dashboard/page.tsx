@@ -5,6 +5,8 @@ import ProductsList from '@/components/dashboard/products-list';
 import QuickStats from '@/components/dashboard/quick-stats';
 import { DEMO_USER_ID } from '@/lib/demo';
 
+export const dynamic = 'force-dynamic';
+
 export default async function DashboardPage() {
   const supabase = await createClient()
 

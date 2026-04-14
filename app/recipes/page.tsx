@@ -12,6 +12,8 @@ interface Recipe {
   prepTime: string
 }
 
+export const dynamic = 'force-dynamic';
+
 export default function RecipesPage() {
   const [recipes, setRecipes] = useState<Recipe[]>([])
   const [isLoading, setIsLoading] = useState(false)
