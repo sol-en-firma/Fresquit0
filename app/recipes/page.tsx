@@ -1,10 +1,9 @@
-'use client'
-
-import { useState, useEffect } from 'react'
-import { createClient } from '@/lib/supabase/client'
-import { generateRecipeSuggestionsWithAI } from '@/app/actions/ai'
-import Link from 'next/link'
-import { DEMO_USER_ID } from '@/lib/demo'
+'use client';
+import { useState, useEffect } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import { generateRecipeSuggestionsWithAI } from '@/app/actions/ai';
+import Link from 'next/link';
+import { DEMO_USER_ID } from '@/lib/demo';
 
 interface Recipe {
   name: string

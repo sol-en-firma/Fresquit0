@@ -12,7 +12,7 @@
     "ai": "^6.0.0",
     "@ai-sdk/react": "^3.0.0",
     "@supabase/supabase-js": "^2.39.0",
-    "@supabase/ssr": "^0.0.10",
+    "@supabase/ssr": "^0.10.2",
     "@vercel/blob": "^2.3.1",
     "@hookform/resolvers": "^3.9.1",
     "@vercel/analytics": "1.6.1",

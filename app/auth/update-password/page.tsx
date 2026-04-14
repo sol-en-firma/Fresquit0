@@ -1,9 +1,8 @@
-'use client'
-
-import { updatePassword } from '@/app/actions/auth'
-import { useSearchParams } from 'next/navigation'
-import Link from 'next/link'
-import { Suspense } from 'react'
+'use client';
+import { updatePassword } from '@/app/actions/auth';
+import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
+import { Suspense } from 'react';
 
 function UpdatePasswordForm() {
   const searchParams = useSearchParams()

@@ -1,13 +1,13 @@
-import { requestPasswordReset } from '@/app/actions/auth'
-import { createClient } from '@/lib/supabase/server'
-import { redirect } from 'next/navigation'
-import Link from 'next/link'
+import { requestPasswordReset } from '@/app/actions/auth';
+import { createClient } from '@/lib/supabase/server';
+import { redirect } from 'next/navigation';
+import Link from 'next/link';
 
 export default async function ResetPasswordPage() {
   const supabase = await createClient()
   const {
     data: { user },
-  } = await supabase.auth.getUser()
+  } = await supabase?.auth?.getUser()
 
   if (user) {
     redirect('/dashboard')

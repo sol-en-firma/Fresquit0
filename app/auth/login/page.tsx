@@ -1,13 +1,13 @@
-import { signIn } from '@/app/actions/auth'
-import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
-import Link from 'next/link'
+import { signIn } from '@/app/actions/auth';
+import { redirect } from 'next/navigation';
+import { createClient } from '@/lib/supabase/server';
+import Link from 'next/link';
 
 export default async function LoginPage() {
   const supabase = await createClient()
   const {
     data: { user },
-  } = await supabase.auth.getUser()
+  } = await supabase?.auth?.getUser()
 
   if (user) {
     redirect('/dashboard')

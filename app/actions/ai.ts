@@ -1,7 +1,6 @@
-'use server'
-
-import { generateText } from 'ai'
-import { z } from 'zod'
+'use server';
+import { generateText } from 'ai';
+import { z } from 'zod';
 
 const ProductSchema = z.object({
   name: z.string(),

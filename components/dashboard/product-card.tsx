@@ -1,8 +1,7 @@
-'use client'
-
-import { useState } from 'react'
-import { createClient } from '@/lib/supabase/client'
-import Image from 'next/image'
+'use client';
+import { useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
+import Image from 'next/image';
 
 interface Product {
   id: string
@@ -76,8 +75,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         isExpired
           ? 'border-l-red-500 bg-red-50'
           : isExpiringSoon
-            ? 'border-l-orange-500 bg-orange-50'
-            : 'border-l-green-500 bg-green-50'
+            ? 'border-l-orange-500 bg-orange-50' :'border-l-green-500 bg-green-50'
       }`}
     >
       <div className="flex gap-4">
@@ -116,8 +114,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                   isExpired
                     ? 'bg-red-200 text-red-700'
                     : isExpiringSoon
-                      ? 'bg-orange-200 text-orange-700'
-                      : 'bg-green-200 text-green-700'
+                      ? 'bg-orange-200 text-orange-700' :'bg-green-200 text-green-700'
                 }`}
               >
                 {isExpired ? '❌ Vencido' : `${daysUntilExpiration}d`}

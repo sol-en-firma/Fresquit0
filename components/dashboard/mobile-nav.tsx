@@ -1,7 +1,6 @@
-'use client'
-
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+'use client';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function MobileNav() {
   const pathname = usePathname()
@@ -14,8 +13,7 @@ export default function MobileNav() {
         href="/dashboard"
         className={`flex-1 py-4 text-center transition-colors ${
           isActive('/dashboard')
-            ? 'text-orange-600 border-t-2 border-orange-600'
-            : 'text-gray-600 border-t-2 border-transparent'
+            ? 'text-orange-600 border-t-2 border-orange-600' :'text-gray-600 border-t-2 border-transparent'
         }`}
       >
         <span className="text-2xl">🏠</span>
@@ -26,8 +24,7 @@ export default function MobileNav() {
         href="/recipes"
         className={`flex-1 py-4 text-center transition-colors ${
           isActive('/recipes')
-            ? 'text-orange-600 border-t-2 border-orange-600'
-            : 'text-gray-600 border-t-2 border-transparent'
+            ? 'text-orange-600 border-t-2 border-orange-600' :'text-gray-600 border-t-2 border-transparent'
         }`}
       >
         <span className="text-2xl">🍳</span>
@@ -38,8 +35,7 @@ export default function MobileNav() {
         href="/notifications"
         className={`flex-1 py-4 text-center transition-colors ${
           isActive('/notifications')
-            ? 'text-orange-600 border-t-2 border-orange-600'
-            : 'text-gray-600 border-t-2 border-transparent'
+            ? 'text-orange-600 border-t-2 border-orange-600' :'text-gray-600 border-t-2 border-transparent'
         }`}
       >
         <span className="text-2xl">🔔</span>

@@ -1,8 +1,7 @@
-'use server'
-
-import { createClient } from '@/lib/supabase/server'
-import { put } from '@vercel/blob'
-import { DEMO_USER_ID } from '@/lib/demo'
+'use server';
+import { createClient } from '@/lib/supabase/server';
+import { put } from '@vercel/blob';
+import { DEMO_USER_ID } from '@/lib/demo';
 
 interface DetectedProduct {
   name: string

@@ -1,6 +1,5 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
 
 interface ProductDetailsModalProps {
   isOpen: boolean
