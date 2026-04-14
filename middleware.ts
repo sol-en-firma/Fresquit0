@@ -1,7 +1,7 @@
-import { type NextRequest, NextResponse } from 'next/server'
+import { type NextRequest, NextResponse } from 'next/server';
 
 // Auth disabled for demo mode
-export async function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   return NextResponse.next()
 }
 
